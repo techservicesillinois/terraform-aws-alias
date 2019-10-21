@@ -5,5 +5,5 @@
 # zone_id attribute of zone in which alias record is being managed.
 
 data "aws_route53_zone" "selected" {
-  name = "${var.domain}"
+  name = var.domain
 }
