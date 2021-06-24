@@ -1,10 +1,8 @@
 # alias
 
-[![Build Status](https://drone.techservices.illinois.edu/api/badges/techservicesillinois/terraform-aws-alias/status.svg)](https://drone.techservices.illinois.edu/techservicesillinois/terraform-aws-alias)
+[![Terraform actions status](https://github.com/techservicesillinois/terraform-aws-alias/workflows/terraform/badge.svg)](https://github.com/techservicesillinois/terraform-aws-alias/actions)
 
-Provides a Route 53 alias whose target is an Cloudfront or S3.
-
-This module provides a Route 53 alias whose target is an Cloudfront or S3. 
+Provides a Route 53 alias whose target is a Cloudfront distribution.
 
 Example Usage
 -----------------
@@ -12,7 +10,7 @@ Example Usage
 ### Alias to an ALB in a public Route 53 zone
 ```hcl
 module "alias" {
-  source   = "git@github.com:techservicesillinois/terraform-aws-alias//"
+  source   = "git@github.com:techservicesillinois/terraform-aws-alias"
 
   hostname = "directory-editor-tf"
   domain   = "as-test.techservices.illinois.edu"
